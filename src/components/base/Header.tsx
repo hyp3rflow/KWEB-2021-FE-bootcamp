@@ -35,8 +35,16 @@ const Header = () => {
             color: ${oc.gray[4]};
           `}
         >
-          <div>소개</div>
-          <div>신청</div>
+          <div
+            css={css`
+              cursor: pointer;
+            `}
+            onClick={() => {
+              alert('신청 시작 전입니다.');
+            }}
+          >
+            신청
+          </div>
         </div>
       </div>
     </div>
